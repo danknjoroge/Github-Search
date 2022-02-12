@@ -9,7 +9,7 @@ import { UserComponent } from './user/user.component';
 import { RepositoryComponent } from './repository/repository.component';
 import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { DatecountPipe } from './datecount.pipe';
+import { DatecountPipe } from './pipe/datecount.pipe';
 
 
 
