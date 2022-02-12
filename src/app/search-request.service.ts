@@ -54,7 +54,7 @@ export class SearchRequestService {
 
 
 
-  getUserRepos(searchMe: string) 
+  gitUserRepos(searchMe: string) 
     {
         interface ApiResponse {
             name: string;
@@ -74,7 +74,7 @@ export class SearchRequestService {
     }
 
 
-    getRepos(searchName: string) {
+    gitRepos(searchName: string) {
         interface ApiResponse {
             items: any;
         }
