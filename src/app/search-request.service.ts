@@ -54,7 +54,7 @@ export class SearchRequestService {
 
 
 
-  gitUserRepos(searchMe: string) 
+  getUserRepos(searchMe: string) 
     {
         interface ApiResponse {
             name: string;
@@ -74,4 +74,21 @@ export class SearchRequestService {
     }
 
 
-    
+    getRepos(searchName: string) {
+        interface ApiResponse {
+            items: any;
+        }
+
+        const promise = new Promise((resolve, reject) => {
+            this.http.get<ApiResponse>('https://api.github.com/search/repositories?q=' + searchName + ' &per_page=10 ' + environment.apiUrl).toPromise().then(getRepoResponse => {
+                this.searchRepo = getRepoResponse!.items;
+
+                resolve(promise);
+            }, error => {
+                this.searchRepo = 'error';
+                reject(error);
+            });
+        });
+        return promise;
+    }
+}
