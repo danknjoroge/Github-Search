@@ -54,5 +54,24 @@ export class SearchRequestService {
 
 
 
-  
-}
+  gitUserRepos(searchMe: string) 
+    {
+        interface ApiResponse {
+            name: string;
+            description: string;
+            created_at: Date;
+        }
+
+        const myPromise = new Promise((resolve, reject) => {
+            this.http.get<ApiResponse>('https://api.github.com/users/' + searchMe + '/repos?order=created&sort=asc?access_token=' + environment.apiUrl).toPromise().then(getRepoResponse => {
+                this.newRepository = getRepoResponse;
+                resolve(myPromise);
+            }, error => {
+                reject(error);
+            });
+        });
+        return myPromise;
+    }
+
+
+    
