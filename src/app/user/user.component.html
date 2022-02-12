@@ -25,8 +25,8 @@
                         <td>{{users.public_repos }}</td>
                     </tr>
                     <tr>
-                        <th scope="row">Date created:</th>
-                        <td>{{users.created_at | date}}</td>
+                        <th scope="row">Created On:</th>
+                        <td>{{users.created_at | date:"short"}}</td>
                     </tr>
                     <tr>
                         <th scope="row">Followers:</th>
@@ -35,6 +35,10 @@
                     <tr>
                         <th scope="row">Following</th>
                         <td>{{users.following}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Time Elapsed Since Creation:</th>
+                        <td>{{users.created_at | datecount}}</td>
                     </tr>
                 </tbody>
             </table>

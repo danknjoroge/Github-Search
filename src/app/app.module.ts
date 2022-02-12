@@ -10,6 +10,7 @@ import { RepositoryComponent } from './repository/repository.component';
 import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DatecountPipe } from './pipe/datecount.pipe';
+import { ColorDirective } from './directive/color.directive';
 
 
 
@@ -21,6 +22,7 @@ import { DatecountPipe } from './pipe/datecount.pipe';
     SearchComponent,
     NavbarComponent,
     DatecountPipe,
+    ColorDirective,
   ],
   imports: [
     BrowserModule,

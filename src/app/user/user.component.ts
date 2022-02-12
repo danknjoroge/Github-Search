@@ -30,7 +30,7 @@ export class UserComponent implements OnInit {
   // }
 
 
-  constructor(private searchRequestService: SearchRequestService, public userRepos:SearchRequestService) { }
+  constructor(private searchRequestService: SearchRequestService, private userRepos:SearchRequestService) { }
 
   ngOnInit(): void {
     this.searchRequestService.githubUser(this.searchMe);

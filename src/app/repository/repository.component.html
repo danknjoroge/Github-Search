@@ -21,7 +21,10 @@
                                 <br>
                                 <p class="desc">Description: {{repository.description}}</p>
                                 <br>
-                                <p>Date Created: {{repository.created_at | date}}</p>
+                                <p>Date Created: {{repository.created_at | date:"short"}}</p>
+                                <br>
+                                <p>Time Elapsed: {{repository.created_at | datecount}}</p>
+
                             </td>
                         </tr>
                     </tbody>

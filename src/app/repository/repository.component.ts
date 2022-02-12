@@ -38,5 +38,6 @@ export class RepositoryComponent implements OnInit {
     this.users = this.searchRequestService.users;
     this.userRepos.gitUserRepos(this.searchMe);
     console.log(this.userRepos);
+  
   }
 }
