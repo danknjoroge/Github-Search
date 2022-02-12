@@ -41,4 +41,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
+
+# Added to ignore list
 environment.ts
