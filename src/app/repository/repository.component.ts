@@ -18,7 +18,7 @@ export class RepositoryComponent implements OnInit {
   users!: User;
   repository!: Repository;
   public Searchrepo!: string;
-  public resultCount = 12;
+  // public resultCount = 2;
 
   findUser(username: string){
     this.githubUser = '';
@@ -36,7 +36,7 @@ export class RepositoryComponent implements OnInit {
   ngOnInit(): void {
     this.searchRequestService.githubUser(this.searchMe);
     this.users = this.searchRequestService.users;
-      this.userRepos.gitUserRepos(this.searchMe);
-      console.log(this.userRepos);
+    this.userRepos.gitUserRepos(this.searchMe);
+    console.log(this.userRepos);
   }
 }

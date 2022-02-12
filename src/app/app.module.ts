@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { RepositoryComponent } from './repository/repository.component';
 import { SearchComponent } from './search/search.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { DatecountPipe } from './datecount.pipe';
+
 
 
 @NgModule({
@@ -15,7 +18,9 @@ import { SearchComponent } from './search/search.component';
     AppComponent,
     UserComponent,
     RepositoryComponent,
-    SearchComponent
+    SearchComponent,
+    NavbarComponent,
+    DatecountPipe,
   ],
   imports: [
     BrowserModule,
