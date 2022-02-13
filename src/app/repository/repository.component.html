@@ -5,31 +5,22 @@
     </div>
   </div>
 
+
+  <h2>USER REPOSITORIES</h2>
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-           
-            <h2 style="color: #056b5b;background-color: burlywood;font-family: sans-serif;font-style: italic;"> User
-                Repositories</h2>
-            <div class="table table-striped">
-                <table class="table">
-                    <tbody class="foren">
-                        <tr *ngFor='let repository of userRepos.newRepository'>
-                            <td>
-                                <a href="{{repository.html_url}}" target="_blank">{{repository.name}}</a>
+    <div class="row"  *ngFor='let repository of userRepos.newRepository'>
+        <div class="col-md-3"> 
+            
+            <a href="{{repository.html_url}}" target="_blank">{{repository.name}}</a>
+        </div>
+        <div class="col-md-5">
+            <p class="desc">Description: {{repository.description}}</p>
+        </div>
+        <div class="col-md-4">
+            <p>Date Created: {{repository.created_at | date:"short"}}</p>
+                                
+            <p>Time Elapsed: {{repository.created_at | datecount}}</p>
 
-                                <br>
-                                <p class="desc">Description: {{repository.description}}</p>
-                                <br>
-                                <p>Date Created: {{repository.created_at | date:"short"}}</p>
-                                <br>
-                                <p>Time Elapsed: {{repository.created_at | datecount}}</p>
-
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </div>
     </div>
 </div>

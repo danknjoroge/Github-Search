@@ -1,5 +1,5 @@
-nav h1{
-    color:orangered;
+nav a{
     font-weight: bold;
     text-decoration:none;
+    font-size: 19px;
 }
