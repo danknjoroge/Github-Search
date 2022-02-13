@@ -6,9 +6,9 @@
   </div>
 
 
-  <h2 class="section">USER REPOSITORIES</h2>
+  <h2 class="section" >USER REPOSITORIES</h2>
 <div class="container text-center">
-    <div class="row my-3 py-3"  *ngFor='let repository of userRepos.newRepository'>
+    <div appColor  class="row my-3 py-3"  *ngFor='let repository of userRepos.newRepository'>
         <div class="col-md-2 rel"> 
             Repo Name:
             <a href="{{repository.html_url}}" target="_blank"> {{repository.name}}</a>
