@@ -1,27 +1,37 @@
 # GithubSearch
+## By Daniel Njoroge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+## Description
+It's a site that allows one to be able to search for users using their usernames using an API. One is able to see all the repositories related to them ass well as the day they were created.
 
-## Development server
+#Screenshots of interface
+![Image](src/assets/home.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Installation And Setup Requirements
+* Have a computer connected to the internet with browser and code editor installed.
+* Open Terminal in your computer
+* Clone the repository to your machine from https://github.com/danknjoroge/Github-Search.git
+* Open application using code editor of your choice preferrably atom or visual studio.
+* Run ng serve --open to run application withand opens on your browser.
+* Alternatively, you can use the live link provided under the live-link section which only requires network connection and computer with any browser.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Live link
+https://danknjoroge.github.io/Github-Search/user
 
-## Build
+## Technologies and Software Used
+* HTML
+* CSS
+* Bootstrap
+* Typescript
+* Visual Studio Code
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Known Issues and Bugs
+The project itakes a while to load the information.
 
-## Running unit tests
+## Support And Contact Information
+For any Querries and support you can reach me via my email address:
+* dank8505@gmail.com
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+This project is under [MIT](LICENSE)
