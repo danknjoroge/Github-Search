@@ -4,7 +4,7 @@
 ## Description
 It's a site that allows one to be able to search for users using their usernames using an API. One is able to see all the repositories related to them ass well as the day they were created.
 
-#Screenshots of interface
+# Screenshots of interface
 ![Image](src/assets/home.png)
 
 
