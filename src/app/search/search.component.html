@@ -1,14 +1,6 @@
-<!-- <p>search works!</p>
-<form action="" (ngSubmit)="searchName(searchForm)" #searchForm="ngForm">
-    <input type="text" class="forms-control" name="search" placeholder="Search repo by Username" [(ngModel)]= "searchInfo.find"  #search='ngModel'> <br>
-    <button type="submit" class="btn bg-primary my-2">Search</button>
-</form> -->
-<div class="container h-200 ">
-    <div class="d-flex justify-content-center h-200">
-      <div class="searchbar">
-        <input type="text" class="search_input" name="username" [(ngModel)]="username"
-          placeholder="Search the Username here...">
-        <input type="submit"(click)="search(username)" value="Search">
-      </div>
-    </div>
-  </div>
+<div class="container-fluid d-flex justify-content-space-around">
+  <h3 class="m-2">WELCOME TO GITHUB ACCOUNT/REPOSITORY FINDER</h3>
+  <input type="text" class="search_input" name="username" [(ngModel)]="username"
+    placeholder="Search Github Username Here..."> 
+  <input type="submit" (click)="search(username)" value="Search">
+</div>

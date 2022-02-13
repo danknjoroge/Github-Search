@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
+  [x: string]: any;
 
   // searchInfo = new Search('');
   username!:string;
@@ -16,12 +17,6 @@ export class SearchComponent implements OnInit {
   search(username: string) {
     this.getName.emit(username);
   }
-  // searchName(data: any){
-  //   this.getName.emit(data.value.find);
-  //   console.log(data.value.find);
-  //   data.reset();
-
-  // }
 
   constructor() { }
 

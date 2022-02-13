@@ -18,18 +18,12 @@ export class RepositoryComponent implements OnInit {
   users!: User;
   repository!: Repository;
   public Searchrepo!: string;
-  // public resultCount = 2;
-
+ 
   findUser(username: string){
     this.githubUser = '';
     this.searchMe = username;
     this.ngOnInit();
   }
-  // searchRepos(){
-  //   this.Searchrepo = '';
-  //   this.resultCount=11;
-  // }
-
 
   constructor(private searchRequestService: SearchRequestService, public userRepos:SearchRequestService) { }
 

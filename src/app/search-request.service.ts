@@ -37,15 +37,15 @@ export class SearchRequestService {
     
     const promise = new Promise<void>((resolve) => {
       this.http.get<ApiResponse>('https://api.github.com/users/' + searchName + '?accessToken=' + 
-      environment.apiUrl).toPromise().then(getResponse=> {
-        this.users.name = getResponse!.name;
-        this.users.html_url = getResponse!.html_url;
-        this.users.login = getResponse!.login;
-        this.users.avatar_url = getResponse!.avatar_url;
-        this.users.public_repos = getResponse!.public_repos;
-        this.users.created_at = getResponse!.created_at;
-        this.users.followers = getResponse!.followers;
-        this.users.following = getResponse!.following;
+      environment.apiUrl).toPromise().then(response=> {
+        this.users.name = response!.name;
+        this.users.html_url = response!.html_url;
+        this.users.login = response!.login;
+        this.users.avatar_url = response!.avatar_url;
+        this.users.public_repos = response!.public_repos;
+        this.users.created_at = response!.created_at;
+        this.users.followers = response!.followers;
+        this.users.following = response!.following;
         resolve();
       })
     });
@@ -57,6 +57,7 @@ export class SearchRequestService {
   gitUserRepos(searchMe: string) 
     {
         interface ApiResponse {
+          
             name: string;
             description: string;
             created_at: Date;
