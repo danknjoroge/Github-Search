@@ -1,1 +1,17 @@
 
+.row{
+    background-color: aliceblue;
+    width: 80%;
+    align-items: center;
+    margin-left: 120px;
+
+}
+.section{
+  text-align: center;
+  color: orangered;
+  font-size: 33px;  
+}
+a{
+    color: orangered;
+    text-decoration: none;
+}
