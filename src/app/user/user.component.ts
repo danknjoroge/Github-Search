@@ -25,11 +25,13 @@ export class UserComponent implements OnInit {
     this.ngOnInit();
   }
 
-  constructor(private searchRequestService: SearchRequestService, private userRepos:SearchRequestService) { }
+  constructor(private searchRequestService: SearchRequestService, public userRepos:SearchRequestService) { }
 
   ngOnInit(): void {
     this.searchRequestService.githubUser(this.searchMe);
     this.users = this.searchRequestService.users;
+    this.userRepos.gitUserRepos(this.searchMe);
+    console.log(this.userRepos);
   }
 
 }
