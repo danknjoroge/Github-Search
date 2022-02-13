@@ -44,3 +44,4 @@ Thumbs.db
 
 # Added to ignore list
 environment.ts
+environment.prod.ts
