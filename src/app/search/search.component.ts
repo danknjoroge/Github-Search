@@ -9,7 +9,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class SearchComponent implements OnInit {
   [x: string]: any;
 
-  // searchInfo = new Search('');
   username!:string;
 
   
@@ -17,6 +16,9 @@ export class SearchComponent implements OnInit {
   search(username: string) {
     this.getName.emit(username);
     this.username ='';
+    if(username ===''){
+      alert('Please enter a Github username');
+    }
   }
 
   constructor() { }
