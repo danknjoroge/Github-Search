@@ -16,6 +16,7 @@ export class SearchComponent implements OnInit {
   @Output() getName = new EventEmitter<string>();
   search(username: string) {
     this.getName.emit(username);
+    this.username ='';
   }
 
   constructor() { }

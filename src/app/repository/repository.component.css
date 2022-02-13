@@ -4,6 +4,8 @@
     width: 80%;
     align-items: center;
     margin-left: 120px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
 
 }
 .section{
