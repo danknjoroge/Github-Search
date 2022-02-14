@@ -15,7 +15,6 @@ export class SearchRequestService {
   searchRepo:any;
   
 
-  getProfileReop:any;
 
   constructor(private http:HttpClient) {
     this.users = new User('', '', '',0 ,'', new Date(), 0,0);
