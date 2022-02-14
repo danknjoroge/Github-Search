@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DatecountPipe } from './pipe/datecount.pipe';
 import { ColorDirective } from './directive/color.directive';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -23,6 +24,7 @@ import { ColorDirective } from './directive/color.directive';
     NavbarComponent,
     DatecountPipe,
     ColorDirective,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
