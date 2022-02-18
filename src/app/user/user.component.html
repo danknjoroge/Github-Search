@@ -7,8 +7,8 @@
 <div  class="row container m-3">
     <div class="col-md-6">
         <img src="{{users.avatar_url}}" alt="Searching..">
-        <p>
-            <a href="{{users.html_url}}" target="blank" class="btn btn-success btn-sm">View profile on Github</a>
+        <p class="text-muted tt">
+            <a href="{{users.html_url}}" class="" target="blank" class="btn btn-success btn-sm">View profile on Github</a>
         </p>
     </div>
 
@@ -39,17 +39,13 @@
             </tbody>
         </table>
         <div class="row">
-            <div class="col-md-3">
-                <p>REPOSITORIES:
-                </p>
+            <p>REPOSITORIES:</p>
+            <div class="col-md-5 m-2 md"*ngFor='let repository of userRepos.newRepository'>
+                
+            <a href="{{repository.html_url}}" target="_blank"> {{repository.name}}</a>
+            <p>{{repository.description}} </p>
             </div>
-            <div class="col-md-7">
-                <ol>
-                    <li *ngFor='let repository of userRepos.newRepository'>
-                        <a href="{{repository.html_url}}" target="_blank"> {{repository.name}}</a>
-                    </li>
-                </ol>
-            </div>
+            
         </div>
     </div>
 </div>

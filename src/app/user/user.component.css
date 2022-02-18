@@ -1,6 +1,6 @@
 
 img{
-    height: 50%;
+    height: 50;
 }
 h3 {
     color: orangered;
@@ -15,4 +15,17 @@ li a{
     background-color: orangered;
     font-weight: bold;
     border: none;
+    color: white;
+}
+.md{
+    background-color: aliceblue;
+    border-radius: 13px;
+}
+a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+.tt{
+    color: white;
 }
